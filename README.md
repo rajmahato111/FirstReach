@@ -10,7 +10,7 @@ As a job seeker, I used to spend over 3 hours every day sending cold emails to r
 
 - **Time Savings**: By automating the email sending process, I was able to significantly reduce the time spent on reaching out to recruiters. What used to take me hours to accomplish manually can now be done within minutes using this automated solution. For instance - once I had names of folks from a company, i was able to send over 50 emails in a few minutes.
 
-    ![Gmail Screenshot](./output_img/output_img.png)
+    ![Gmail Screenshot](./output_img/output_img.png.png)
 
 - **Efficiency**: The project generates potential email addresses for recruiters based on common patterns, such as firstname@company.com, firstname.lastname@company.com, and firstnamelastname@company.com. This streamlined approach allows me to quickly send personalized cold emails to a large number of recruiters in less time.
 
@@ -111,10 +111,10 @@ As a job seeker, I used to spend over 3 hours every day sending cold emails to r
 ### Screenshots
 
 #### Immediate Email Sending
-![Email Now](./output_img/email_sent_now.png)
+![Email Now](./output_img/email_sent_now.png.png)
 
 #### Scheduled Email Sending
-![Email Later](./output_img/email_sent_later.png)
+![Email Later](./output_img/email_sent_later.png.png)
 
 ## Dependencies
 
