@@ -42,8 +42,6 @@ ENV/
 *.xlsx
 *.xls
 *.csv
-output_img/*
-!output_img/.gitkeep
 *.log
 logs/
 temp/
