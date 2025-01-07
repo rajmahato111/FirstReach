@@ -7,6 +7,7 @@ and reading data from Excel files.
 
 import logging
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 from data_utils.excel_reader import read_data_from_excel
 from data_utils.generate_email_address import generate_email_address
@@ -38,10 +39,17 @@ def read_email_template():
     Returns:
         str: Email template.
     """
-    with open('email_assets/email_template.txt', 'r') as file:
-        email_template = file.read()
-    logger.info("Read email template.")
-    return email_template
+    try:
+        current_dir = Path(os.path.dirname(os.path.dirname(__file__)))
+        template_path = current_dir / 'email_assets' / 'email_template_with_formatting.txt'
+        
+        with open(template_path, 'r', encoding='utf-8') as file:
+            email_template = file.read()
+            logger.info("Read email template successfully.")
+            return email_template
+    except Exception as e:
+        logger.error(f"Error reading template: {str(e)}")
+        raise
 
 def read_follow_up_template():
     """
